@@ -1,8 +1,4 @@
 #!/usr/bin/python3
-arr = []
 def magic_string(n):
-  for i in range(n) :
-    arr.append("BestSchool")
-
-magic_string(3)
-print(arr)
+    magic_string.count = getattr(magic_string, 'count', 0) +1
+    return ", ".join(["BestSchool" for i in range(magic_string.count)])
